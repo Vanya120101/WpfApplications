@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApplications.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplications"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Background="#181735">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Bunny and CO" 
+                   Foreground="White" 
+                   Grid.Column="1"
+                   Style="{StaticResource MenuBlock}"/>
+
+        <TextBlock Text="Menu" 
+                   Foreground="White" 
+                   Grid.Column="2"
+                   Style="{StaticResource MenuBlock}"/>
+
+        <TextBlock Text="Website" 
+                   Foreground="White" 
+                   Grid.Column="3"
+                   Style="{StaticResource MenuBlock}"/>
+
+        <Button Content="Start"
+                Grid.Column="10"
+                Style="{StaticResource MenuButton}"/>
+
+    </Grid>
+</Window>
