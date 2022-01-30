@@ -11,6 +11,9 @@
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter Property="Cursor" Value="Hand"/>
             </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#1817FF"/>
+            </Trigger>
         </Style.Triggers>
     </Style>
 
@@ -24,13 +27,17 @@
                         <Border CornerRadius="10"
                                 Background="{TemplateBinding Background}"
                                 BorderThickness="0"
-                                Margin="2,10,2,2">
+                                Padding="3"
+                                MinHeight="25"
+                                MinWidth="100">
 
                             <Grid>
                                 <TextBlock Text="{TemplateBinding Content}"
-                                           Style="{StaticResource MenuBlock}"
                                            Foreground="Black"
                                            Margin="0,0,0,0"
+                                           FontSize="14"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
                                            />
                             </Grid>
                             
@@ -39,6 +46,12 @@
                 </Setter.Value>
             </Setter>
         </Style.Setters>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"/>
+                <Setter Property="Background" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
         
     </Style>
 </ResourceDictionary>
