@@ -8,12 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MVVM\ViewModel\" />
-    <Folder Include="Themes\" />
-    <Folder Include="MVVM\Model\" />
     <Folder Include="MVVM\View\" />
-    <Folder Include="Icons\" />
     <Folder Include="Core\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Icons\-NvJ44YIvy0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
